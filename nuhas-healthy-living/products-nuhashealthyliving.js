@@ -1,14 +1,14 @@
 /**
-🌿 Nuha's Healthy Living - Centralized Product Data & Utilities
-📁 Recommended Path: /nuha-healthy-living/js/products-nuha-healthy-living.js
-🔗 Usage: Include this exact script on BOTH Hive Times & Nuha's Healthy Living pages.
+🌿 Nuhas Healthy Living - Centralized Product Data & Utilities
+📁 Recommended Path: /nuhas-healthy-living/js/products-nuhas-healthy-living.js
+🔗 Usage: Include this exact script on BOTH Hive Times & Nuhas Healthy Living pages.
 ✅ Edit the RAW_PRODUCTS array below → Auto-syncs across all linked sites.
 */
 (function () {
   // 📌 ASSET CONFIGURATION
   const CONFIG = {
     basePath: "",
-    imageDir: "/nuhas-healthy-living/images", 
+    imageDir: "/nuhas-healthy-living/images2", 
     fallbackImage: "/nuhas-healthy-living/images2/nuhashealthyliving-logo.jpg",
     businessName: "Nuhas Healthy Living",
     businessLogo: "/nuhas-healthy-living/images2/nuhashealthyliving-logo.jpg"
@@ -206,7 +206,7 @@
     
     getWhatsAppLink: (product, phoneNumber = "27123456789") => {
       const msg = encodeURIComponent(
-        `Hi! I'd like to order from Nuha's Healthy Living:\n\n` +
+        `Hi! I'd like to order from Nuhas Healthy Living:\n\n` +
         `🌿 *${product.name}*\n` +
         `💰 Price: R${product.price.toFixed(2)}\n` +
         `📝 ${product.description}\n\n` +
@@ -217,7 +217,7 @@
   };
 
   // 📊 Dev Console
-  console.group("🌿 Nuha's Healthy Living Products Synced");
+  console.group("🌿 Nuhas Healthy Living Products Synced");
   console.log(`✅ ${PROCESSED.length} products loaded`);
   const grouped = {};
   PROCESSED.forEach(p => {
