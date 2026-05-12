@@ -8,7 +8,7 @@
   // 📌 ASSET CONFIGURATION
   const CONFIG = {
     basePath: "",
-    imageDir: "/nuhas-healthy-living/images", 
+    imageDir: "/nuhas-healthy-living/images2", 
     fallbackImage: "/nuhas-healthy-living/images2/nuhashealthyliving-logo.jpg",
     businessName: "Nuhas Healthy Living",
     businessLogo: "/nuhas-healthy-living/images2/nuhashealthyliving-logo.jpg"
