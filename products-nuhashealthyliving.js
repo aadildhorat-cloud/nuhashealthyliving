@@ -132,18 +132,15 @@
   { id: "acv-capsules", name: "Apple Cider Vinegar Capsules", price: 200.00, category: "specialty-wellness", niche: "medication", location: "azadville", description: "Weight management, digestion aid, supports metabolism, easy to take.", badge: "", image: "101.jpg" }
 ];
   // 🔄 Process & Attach Metadata
- const PROCESSED = RAW_PRODUCTS.map(product => ({
-  ...product,
-  // Trim ALL string values to remove trailing spaces:
-  id: product.id?.trim(),
-  name: product.name?.trim(),
-  description: product.description?.trim(),
-  badge: product.badge?.trim(),
-  image: product.image?.trim(),
-  categorySlug: product.category?.trim().toLowerCase(),
-  nicheSlug: (product.niche || "health-beauty").trim().toLowerCase(),
-  locationSlug: (product.location || "gauteng").trim().toLowerCase(),
-  image: `${CONFIG.basePath}${CONFIG.imageDir}/${product.image?.trim()}`,
+  const PROCESSED = RAW_PRODUCTS.map(product => ({
+    ...product,
+    image: `${CONFIG.basePath}${CONFIG.imageDir}/${product.image}`,
+    imageFallback: `${CONFIG.basePath}${CONFIG.fallbackImage}`,
+    businessName: product.businessName || CONFIG.businessName,
+    businessLogo: `${CONFIG.basePath}${CONFIG.fallbackImage}`,
+    categorySlug: product.category.trim().toLowerCase(),
+    nicheSlug: product.niche?.trim().toLowerCase() || "health-beauty",
+    locationSlug: product.location?.trim().toLowerCase() || "gauteng"
   }));
 
     // 🌐 Global Export
