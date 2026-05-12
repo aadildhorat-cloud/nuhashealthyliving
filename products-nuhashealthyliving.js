@@ -8,10 +8,10 @@
   // 📌 ASSET CONFIGURATION
   const CONFIG = {
     basePath: "",
-    imageDir: "/nuhas-healthy-living/images",
-    fallbackImage: "/nuhas-healthy-living/nuhashealthyliving-logo.jpg",
+    imageDir: "/nuhas-healthy-living/images", 
+    fallbackImage: "/nuhas-healthy-living/images2/nuhashealthyliving-logo.jpg",
     businessName: "Nuhas Healthy Living",
-    businessLogo: "/nuhas-healthy-living/nuhashealthyliving-logo.jpg"
+    businessLogo: "/nuhas-healthy-living/images2/nuhashealthyliving-logo.jpg"
   };
 
   // 📦 RAW PRODUCT DATA - ✏️ EDIT THIS ARRAY TO UPDATE EVERYWHERE
