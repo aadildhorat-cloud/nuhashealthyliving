@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DTPGZ964FD"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-DTPGZ964FD');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuha's Healthy Living | Organic Supplements & Personal Care</title>
+  <title>Nuhas Healthy Living | Organic Supplements & Personal Care</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   
@@ -92,7 +100,7 @@ footer { background: linear-gradient(135deg, #2E7D32, #43A047) !important; }
       background-color: #F0F8F0;
     }
 
-    /* === NUHA'S HEALTHY LIVING GREEN THEME (Matching Logo) === */
+    /* === NUHAS HEALTHY LIVING GREEN THEME (Matching Logo) === */
     :root {
       --primary: #7CB342;        /* Natural green from leaves */
       --primary-dark: #558B2F;   /* Darker green */
@@ -802,8 +810,8 @@ footer { background: linear-gradient(135deg, #2E7D32, #43A047) !important; }
     </button>
 
     <div class="logo-container">
-      <img src="images2/nuhashealthyliving-logo.jpg" alt="Nuha's Healthy Living Logo" class="logo-img">
-      <div class="logo">Nuha's<br><small style="font-size: 18px;">Healthy Living</small></div>
+      <img src="images2/nuhashealthyliving-logo.jpg" alt="Nuhas Healthy Living Logo" class="logo-img">
+      <div class="logo">Nuhas<br><small style="font-size: 18px;">Healthy Living</small></div>
     </div>
 
     <!-- HIVE TIMES BADGE -->
@@ -832,13 +840,13 @@ footer { background: linear-gradient(135deg, #2E7D32, #43A047) !important; }
 <div class="menu-overlay" id="menuOverlay"></div>
 <nav class="side-menu" id="sideMenu">
   <div class="menu-header">
-    <img src="images2/nuhashealthyliving-logo.jpg" alt="Nuha's Healthy Living Logo">
-    <h2>Nuha's Healthy Living</h2>
+    <img src="images2/nuhashealthyliving-logo.jpg" alt="Nuhas Healthy Living Logo">
+    <h2>nuhas Healthy Living</h2>
   </div>
   <div class="menu-items">
     <div class="menu-item">
-      <a href="index.html" class="menu-link" onclick="toggleMenu()">
-        <span><i class="fas fa-home"></i> Home</span>
+      <a href="https://hivetimes.co.za/" class="menu-link" onclick="toggleMenu()">
+        <span><i class="fas bee-hive"></i> Hive Times</span>
       </a>
     </div>
     <div class="menu-item">
@@ -897,14 +905,14 @@ footer { background: linear-gradient(135deg, #2E7D32, #43A047) !important; }
     <button class="close-business-modal" id="closeBusinessModal"><i class="fas fa-times"></i></button>
     <div class="business-modal-content">
       <div class="business-hero">
-        <img src="images/nuhashealthyliving-logo.jpg" alt="Nuha's Healthy Living Logo" class="business-hero-logo">
-        <h1 class="business-hero-title">Nuha's Healthy Living</h1>
+        <img src="images/nuhashealthyliving-logo.jpg" alt="nuhas Healthy Living Logo" class="business-hero-logo">
+        <h1 class="business-hero-title">nuhas Healthy Living</h1>
         <p class="business-hero-tagline">Your Health Is Your Greatest Wealth</p>
       </div>
       <div class="business-info-grid">
         <section class="business-section">
           <h2><i class="fas fa-info-circle"></i> About Us</h2>
-          <p>Welcome to Nuha's Healthy Living, your trusted source for organic supplements and personal care products. We specialize in 100% natural, Halaal-certified products for the entire family. Our commitment to quality and wellness ensures that every product is made with care, free from chemicals, preservatives, and artificial additives.</p>
+          <p>Welcome to nuhas Healthy Living, your trusted source for organic supplements and personal care products. We specialize in 100% natural, Halaal-certified products for the entire family. Our commitment to quality and wellness ensures that every product is made with care, free from chemicals, preservatives, and artificial additives.</p>
           <p style="margin-top: 15px;"><strong>Our Values:</strong><br>
           ✅ Strictly Halaal certified<br>
           ✅ 100% Organic & Natural<br>
@@ -1043,7 +1051,7 @@ footer { background: linear-gradient(135deg, #2E7D32, #43A047) !important; }
   <div class="footer-container">
     <div class="footer-content">
       <div class="footer-info">
-        <h3>NUHA'S HEALTHY LIVING</h3>
+        <h3>nuhas HEALTHY LIVING</h3>
         <p>Your Health Is Your Greatest Wealth<br>100% Organic • Natural • Halaal</p>
         <div class="social-media">
           <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
@@ -1064,7 +1072,7 @@ footer { background: linear-gradient(135deg, #2E7D32, #43A047) !important; }
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2026 Nuha's Healthy Living. All rights reserved. | <a href="https://hivetimes.co.za" style="color: white;">Hivetimes.co.za</a>
+      &copy; 2026 nuhas Healthy Living. All rights reserved. | <a href="https://hivetimes.co.za" style="color: white;">Hivetimes.co.za</a>
     </div>
   </div>
 </footer>
@@ -1309,7 +1317,7 @@ function closeCartModal() {
 // === WHATSAPP ORDER ===
 function sendCartToWhatsApp() {
   if (cart.items.length === 0) { alert("Your cart is empty!"); return; }
-  let msg = "Hi Nuha's Healthy Living! I'd like to place an order from Hive Times:\n\n";
+  let msg = "Hi nuhas Healthy Living! I'd like to place an order from Hive Times:\n\n";
   cart.items.forEach(item => { msg += `• ${item.name} x${item.quantity} — R${(item.price * item.quantity).toFixed(2)}\n`; });
   msg += `\n*Total: R${cart.calculateTotal()}*\n\nThank you!`;
   const url = `https://wa.me/27123456789?text=${encodeURIComponent(msg)}`;
